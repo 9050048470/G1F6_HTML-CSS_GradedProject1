@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    border: 2px solid black;
+    width: 100%;
+}
+
+nav {
+    background-color: lightgrey;
+    position: fixed;
+    width: 100%;
+    top: 65px;
+    z-index: 100;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-menu {
+    background-color: rgb(133, 133, 133);
+    padding-left: 50px;
+}
+
+#main-menu>li {
+    display: inline-block;
+    font-size: 18px;
+
+}
+
+#main-menu>li>a {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+
+}
+
+#parent-main-menu-items {
+    position: relative;
+
+}
+
+#sub-menu {
+    content: '';
+    position: absolute;
+    background-color: rgba(250, 243, 243, 0.93);
+    padding: 0px 0px 3px 0px;
+    display: none;
+    white-space: nowrap;
+    left: 10px;
+    animation: ami 1s forwards;
+
+}
+
+@keyframes ami {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+#sub-menu li {
+    margin: 0;
+    padding: 8px;
+    background-color: rgb(242, 240, 240);
+}
+
+#sub-menu li a {
+    color: #0591ee76;
+    font-size: 18px;
+
+}
+
+#parent-main-menu-items:hover #sub-menu {
+    display: block;
+
+}
+
+nav>ul>li:hover {
+    background-color: rgba(0, 0, 0, 0.485);
+}
+
+header h1 {
+    display: block;
+    margin-right: 40px;
+    text-align: center;
+    padding: 15px 0px;
+    font-weight: 800;
+    color: #fff;
+
+}
+
+header {
+    top: 0px;
+    width: 100%;
+    background-color: rgb(72, 72, 72);
+    position: fixed;
+    z-index: 1000;
+}
+
+footer {
+    padding: 15px 0px;
+    text-align: center;
+    position: fixed;
+    background-color: black;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+footer p {
+    color: #fff;
+}
+
+#slider {
+  display: flex;
+  flex-wrap: wrap;
+    margin-top: 106px;
+    width: 100%;
+    height: 578px;
+    border: 2px solid steelblue;
+
+    
+}
+
+.silder-img {
+   background-size: cover;
+    animation: silde 8s infinite;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+   
+}
+
+@keyframes silde {
+
+    0% {
+        background-image: url("../Images/Animation/ani1.jpg");
+      
+    }
+
+    30% {
+        background-image: url("../Images/Animation/ani3.jpg");
+     
+    }
+
+    60% {
+        background-image: url("../Images/Animation/ani4.jpg");
+      
+    }
+
+    80% {
+        background-image: url("../Images/Animation/ani5.jpg");
+     
+    }
+
+    100% {
+        background-image: url("../Images/Animation/ani2.png");
+        
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#covid-care-section .box h3 {
+    color: black;
+    font-weight: bold;
+    
+}
+
+#covid-care-section .box button {
+    background-color: rgba(137, 43, 226, 0.14);
+    color: orange;
+    font-size: large;
+    font-weight: 600;
+    width: 100%;
+    padding: 4px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid rgba(117, 5, 178, 0.647);
+}
+
+.box {
+    width: 330px;
+    height: 300px;
+    margin: 10px;
+    box-shadow: 10px solid black;
+    background-color: rgba(137, 43, 226, 0.14);
+    color: rgba(0, 123, 255, 0.555);
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgb(201, 196, 196);
+    transition: transform 1s;
+}
+
+#covid-care-section .box:hover {
+    transform: scale(1.05);
+    
+}
+.box:focus-within {
+    background-color: rgb(250, 234, 230);
+    border: 2px solid rgb(0, 255, 76);
+}
+.box .pro-img img {
+    width: 100%;
+    height: 200px;
+}
+
+section h1 {
+    margin-left: 10px;
+}
+
+section {
+    margin-bottom: 50px;
+    width: 100%;
+   
+}

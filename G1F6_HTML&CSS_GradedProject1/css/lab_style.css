@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#start {
+    overflow-y: scroll;
+    position: fixed;
+    display: flex;
+    top: 50px;
+    right: 100px;
+    height: 80%;
+    width: 90%;
+    border: 2px solid rgb(193, 189, 189);
+    box-shadow: -10px -10px 20px rgb(201, 196, 196);
+}
+
+.button-class {
+    left: 35%;
+    bottom: 40px;
+    position: fixed;
+    display: flex;
+}
+
+.button-class .btn {
+    background-color: rgb(225, 13, 245);
+    padding: 8px 16px;
+    font-size: 17px;
+    color: #fff;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.divder {
+    width: 50%;
+}
+
+
+#div {
+    padding: 40px;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid darkgray;
+    padding: 10px 6px;
+    font-size: 18px;
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+input[type=number] {
+    border: none;
+    border-bottom: 2px solid darkgray;
+    padding: 10px 6px;
+    font-size: 18px;
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+input[type=email] {
+    border: none;
+    border-bottom: 2px solid darkgray;
+    padding: 10px 6px;
+    font-size: 18px;
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+input[type=datetime-local] {
+    border-bottom: 2px solid darkgray;
+    padding: 10px 6px;
+    font-size: 18px;
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+input:focus input[type=datetime-local],
+input[type=text],
+input[type=number],
+input[type=email] {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+select {
+    border-bottom: 2px solid darkgray;
+    padding: 12px 8px;
+    font-size: 18px;
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+select:focus {
+    outline: none;
+}
+
+input[type=checkbox] {
+    font-size: 25px;
+}
+
+
+img {
+    margin-left: 0;
+    margin-right: 0;
+    position: fixed;
+    right: 120px;
+    top: 53px;
+    width: 45%;
+    height: 80%;
+    overflow: hidden;
+}
+
+label {
+    font-size: 18px;
+
+}
+
+.error::after {
+    content: ' (Check atleast one box without fail)';
+    color: red;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 390px) {
+
+    img,
+    .imgdiv {
+        display: none;
+    }
+
+    .divder {
+        width: 100%;
+    }
+
+    #start {
+        right: 0;
+    }
+
+    .wid-for-inp {
+        width: 100%;
+    }
+}

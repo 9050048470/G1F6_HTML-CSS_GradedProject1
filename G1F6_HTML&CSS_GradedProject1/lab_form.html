@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Registration</title>
+    <link rel="stylesheet" href="css/lab_style.css">
+</head>
+<body>
+    <form action="nac.html">
+        <div id="start">
+            <div class="divder">
+                <div id="div">
+
+                    <strong>
+                        <h2>1.Your Contact Details</h2>
+                    </strong>
+                    <br><br>
+                    <input type="text" class="wid-for-inp" name="fullname" id="fullname" placeholder="Full Name"
+                        required>
+                    <input type="text" class="wid-for-inp" name="pid" id="pid" placeholder="Patient id if exists"
+                        required>
+                    <input type="number" class="wid-for-inp" name="mobile" id="mobile" placeholder="Contact Number"
+                        required>
+                    <input type="email" class="wid-for-inp" name="emailid" id="emailid" placeholder="Email id" required>
+                    <br><br>
+                    <strong>
+                        <h2>2. Address</h2>
+                    </strong>
+                    <br><br>
+                    <input type="text" class="wid-for-inp" name="hno" id="hno" placeholder="H.No." required>
+                    <input type="text" class="wid-for-inp" name="street" id="street" placeholder="Street" required>
+                    <input type="text" class="wid-for-inp" name="Area" id="Area" placeholder="Area" required>
+                    <br><br>
+                    <b>
+                        <h3>District</h3>
+                    </b><br><br>
+                    <select name="District" id="District" required>
+                        <option value="">Choose</option>
+                        <option value="KAITHAL">KAITHAL</option>
+                        <option value="HISAR">HISAR</option>
+                        <option value="JIND">JIND</option>
+                    </select>
+                    <br><br>
+                    <strong>
+                        <h2>
+                            <p class="error">3.Choose the Test Type</p>
+                        </h2>
+                    </strong><br><br>
+                    <input type="checkbox" name="testname[]" id="option1">
+                    <label>CBC</label><br>
+                    <input type="checkbox" name="testname[]" id="option2">
+                    <label>Complete Urine</label><br>
+                    <input type="checkbox" name="testname[]" id="option3">
+                    <label>Lipid Profile</label><br>
+                    <input type="checkbox" name="testname[]" id="option4">
+                    <label>Thyroid Stimulating Hormone(TSH)</label><br>
+                    <input type="checkbox" name="testname[]" id="option5">
+                    <label>Glucose Test</label><br><br>
+                    <strong>
+                        <h2>
+                            <p>4. Do You want a hard copy of the report also?</p>
+                        </h2>
+                    </strong><br><br>
+                    <input type="radio" name="hardcopy" id="hardcopy" required>
+                    <label>YES</label> &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="hardcopy" id="hardcopy" required>
+                    <label>NO</label><br><br><br>
+                    <strong>
+                        <h2>
+                            <p>5.Select Your Comfortable Date and Time</p>
+                        </h2>
+                    </strong><br><br>
+                    <input class="wid-for-inp" type="datetime-local" name="datetime" id="datetime" required>
+                </div>
+            </div>
+            <div class="divder imgdiv">
+                <img src="Images/Lab-Test/lab-test.jpg" alt="">
+            </div>
+
+        </div>
+        <div class="button-class">
+            <button type="reset" class="btn">Reset</button>
+            <button type="submit" class="btn">Submit</button>
+
+        </div>
+    </form>
+</body>
+
+</html>
